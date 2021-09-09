@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux'
-
-import words from './words'
+import typing from './tying'
+import message from './message'
 
 export default combineReducers({
-  words
+  typing,
+  message
 })
