@@ -2,7 +2,7 @@ import request from 'superagent'
 
 export function postMessage (senderId, receiverId, message) {
   const messagePack = { senderId, receiverId, message }
-  return request.post('/api/v1/message')
+  return request.post('/messages/send')
     .send(messagePack)
     .then((res) => {
       return res.body
@@ -14,7 +14,7 @@ export function postMessage (senderId, receiverId, message) {
 
 export function fetchMessage (senderId, receiverId) {
   const ids = { senderId, receiverId }
-  return request.get('/api/v1/message')
+  return request.post('/messages/view')
     .send(ids)
     .then((res) => {
       return res.body
