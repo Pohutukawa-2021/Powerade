@@ -13,7 +13,7 @@ function getMessages (data, db = connection) {
       'messages.id as messageId',
       'receivers_id as receiverId',
       'receivers.name as receiverName',
-      'senders.id as snederId',
+      'senders.id as senderId',
       'senders.name as senderName',
       'message'
     )
