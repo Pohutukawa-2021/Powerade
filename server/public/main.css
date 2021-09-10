@@ -1,12 +1,102 @@
-.dot {
-  width: 2rem;
-  height: 2rem;
-  border: 1px #ccc solid;
-  border-radius: 50%;
+html {
+  height: 100vh;
 }
 
-button {
-  width: 2rem;
-  height: 2rem;
+body {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.main {
+  flex: 1;
+}
+
+.messagesContainer {
+  min-height: 85%;
+}
+
+.chatroom {
+  height: 100%;
+  background-color: #10c7dd;
+}
+
+.chatForm {
+  background-color: white;
+}
+
+.messageBox {
+  padding: 12px;
+  background-color: white;
+}
+
+/* Home page design */
+
+.Home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #10c7dd;
+}
+
+.home-main-container {
+  text-align: center;
+}
+
+.title,
+.subTitle {
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 80px;
+}
+
+.subTitle {
+  font-size: 30px;
+}
+
+.img {
+  margin: auto;
+  margin-top: 50px;
   border-radius: 50%;
+  width: 300px;
+}
+
+/* Login page style */
+
+.username {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.username-list {
+  list-style: none;
+  padding: 12px;
+  width: 85%;
+}
+
+.username-title {
+  text-align: center;
+  margin: auto;
+}
+
+.list-item {
+  padding: 20px 12px;
+  margin-top: 5px;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid grey !important;
 }
