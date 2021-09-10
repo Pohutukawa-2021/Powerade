@@ -14,7 +14,7 @@ export function postMessage (senderId, receiverId, message) {
 
 export function fetchMessage (senderId, receiverId) {
   const ids = { senderId, receiverId }
-  return request.get('/api/v1/message')
+  return request.post('/api/v1/get/message')
     .send(ids)
     .then((res) => {
       return res.body

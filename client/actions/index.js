@@ -12,7 +12,7 @@ export function sendMessage (senderId, receiverId, message) {
         return null
       })
       .catch(err => {
-        console.error('getMessage has issue', err.message)
+        console.error('sendMessage has issue', err.message)
       })
   }
 }
@@ -29,6 +29,8 @@ export function getMessage (senderId, receiverId) {
       })
   }
 }
+
+// senderName = { name, id }, currentUser = { name, id }
 
 function typingPending () {
   return {
