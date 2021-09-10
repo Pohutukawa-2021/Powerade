@@ -5,15 +5,14 @@ import User2 from './User2'
 import Chatroom from './Chatroom'
 import { Route } from 'react-router-dom'
 
-function App () {
+function App() {
   return (
-    <>
-      <div className='app'></div>
-      <Route path='/' component={Home} />
-      <Route path='/login' component={Login} />
-      <Route path='/User2' component={User2} />
-      <Route path='/Chatroom' component={Chatroom} />
-    </>
+    <div className="main">
+      <Route exact path="/" component={Home} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/User2" component={User2} />
+      <Route exact path="/Chatroom" component={Chatroom} />
+    </div>
   )
 }
 
